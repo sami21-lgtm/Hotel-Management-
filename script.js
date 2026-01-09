@@ -1,15 +1,30 @@
-document.getElementById('loginForm').addEventListener('submit', function(e) {
+/**
+ 
+ */
+function updateImageFromUrl() {
+    const urlInput = document.getElementById('imgUrlInput').value;
+    const preview = document.getElementById('previewImg');
+    
+    if (urlInput.trim() !== "") {
+        preview.src = urlInput; 
+    } else {
+        alert("https://www.hoteldel.com/");
+    }
+}
+
+/**
+ 
+ */
+document.getElementById('reservationForm').addEventListener('submit', function(e) {
     e.preventDefault();
     
-    const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value;
-    const errorMsg = document.getElementById('error-message');
+    const firstName = document.getElementById('fName').value;
+    const lastName = document.getElementById('lName').value;
 
-    // বেসিক ইউজারনেম পাসওয়ার্ড চেক
-    if (email.endsWith("@gmail.com") && password === "sami123") {
-        alert("Success! Going to Dashboard...");
-        window.location.href = "index.html"; // এখানে আপনার ড্যাশবোর্ড পেজের নাম দিন
-    } else {
-        errorMsg.innerText = "Email must be Gmail and password is 'sami123'";
-    }
+    
+    alert("Success! Guest '" + firstName + " " + lastName + "' has been registered in the system.");
+    
+    
+    this.reset();
+    document.getElementById('previewImg').src = "https://via.placeholder.com/150";
 });
