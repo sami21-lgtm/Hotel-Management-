@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.login-body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', sans-serif;
+
+    /* নিচের ইউআরএল-এ আপনার বড় ব্যাকগ্রাউন্ড ছবির লিঙ্ক দিন */
+    background: url('https://www.hoteldel.com/') no-repeat center center/cover;
+    /* উদাহরণ: background: url('hostel-bg.jpg') ... */
+}
+
+/* ছবির ওপর হালকা একটা কালো ছায়া দিতে নিচের অংশটি */
+.login-wrapper {
+    background: rgba(0, 0, 0, 0.5); 
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 15px;
+    width: 380px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+#hostel-logo {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: #eee; /* ছবি না থাকলে সাদা গোল ঘর দেখাবে */
+}
+
+h2 { color: #333; margin-bottom: 5px; }
+p { color: #666; margin-bottom: 25px; font-size: 14px; }
+
+.form-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-size: 13px;
+    font-weight: bold;
+    color: #444;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background: #1e3799;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-btn:hover { background: #0c2461; }
